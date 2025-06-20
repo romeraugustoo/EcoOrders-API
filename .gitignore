@@ -1,0 +1,49 @@
+# Build results
+bin/
+obj/
+out/
+*.exe
+*.dll
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+secrets.json
+
+# EF Core migrations snapshots (optional if you don't want auto snapshot diffs)
+Migrations/*ModelSnapshot.cs
+
+# Logs
+*.log
+
+# Database files
+*.mdf
+*.ldf
+*.db
+*.bak
+
+# Publish results
+publish/
+*.Publish.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git ignore backup
+!.gitignore
