@@ -341,17 +341,19 @@ Trabajo Práctico N.º 01 – Año 2025
 * Romano Luis Fernando (57248)
 * Horacio David Correa (52314)
 
+
+
 ---
 
-## 📊 Criterios de Evaluación Cumplidos
+## 📊 Criterios de Evaluación Propuestos y Desarrollados
 
-| Criterio                    | Cumplimiento | Observaciones                                                                 |
-| --------------------------- | ------------ | ----------------------------------------------------------------------------- |
-| **Funcionalidad (40%)**     | 100%         | Todos los endpoints implementados con lógica completa de stock                |
-| **Calidad de código (30%)** | 100%         | Código limpio, patrones modernos, control de versiones con GitHub             |
-| **Manejo de errores (15%)** | 100%         | Códigos HTTP adecuados, mensajes descriptivos                                 |
-| **EF Core (15%)**           | 100%         | Modelos, relaciones, migraciones y seed implementados                         |
-| **EXTRA**                   | +20%         | Gestión de productos, paginación avanzada, documentación Swagger, guía de uso |
+| **Criterio**              | **Nuestro Desarrollo**                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------------------- |
+| **Funcionalidad**         | Todos los endpoints implementados, con validación de stock y lógica de negocio completa      |
+| **Calidad de Código**     | Código limpio, estructurado, siguiendo patrones modernos y con control de versiones (GitHub) |
+| **Manejo de Errores**     | Códigos HTTP correctos, mensajes descriptivos, validaciones detalladas                       |
+| **EF Core**               | Modelos, relaciones, migraciones y semilla de datos correctamente aplicados                  |
+| **Funcionalidades Extra** | CRUD de productos, paginación avanzada, documentación Swagger y guía de uso                  |
 
 ---
 
