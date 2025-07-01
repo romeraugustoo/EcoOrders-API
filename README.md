@@ -161,11 +161,11 @@ Desarrollada con ASP.NET Core y EF Core. Cumple al 100% con los requisitos del T
 
 ### Flujo de creación de orden
 
-![Flujo de creación de orden](./DOCUMENTOS/imagenes/diagramaorden.png)
+![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
 
 ### Relaciones en Base de Datos
 
-![Diagrama de entidad relacion](./DOCUMENTOS/imagenes/db.png)
+![Diagrama de entidad relacion](./Documentos/imagenes/db.png)
 
 * **Order** 1---\* **OrderItem**
 * **OrderItem** \*---1 **Product**
