@@ -9,7 +9,7 @@ using OrdenesAPI.Data;
 
 #nullable disable
 
-namespace TP01_ORDENES_API.Migrations
+namespace OrdenesAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250620193256_InitialCreate")]
