@@ -162,17 +162,19 @@ Desarrollada con ASP.NET Core y EF Core. Cumple al 100% con los requisitos del T
 ### Flujo de creación de orden
 
 ![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
-![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
 
 ### Relaciones en Base de Datos
 
 ![Diagrama de entidad relacion](./Documentos/imagenes/db.png)
 
 
-### Flujo de creación de orden
+* **Order** 1---\* **OrderItem**
+* **OrderItem** \*---1 **Product**
 
-![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
+**Comportamientos de borrado:**
 
+* Cascade: `Order → OrderItems`
+* Restrict: `Product` con `OrderItems`
 ### Diagrama de transición de estados de la orden 
 
 ![Transición de estado de la orden](./Documentos/imagenes/estadosorden.png)
@@ -188,17 +190,6 @@ var validTransitions = new Dictionary<string, List<string>>
     ["Cancelled"] = new List<string>()  // No se puede cambiar más
 };
 ```
-
-![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
-
-* **Order** 1---\* **OrderItem**
-* **OrderItem** \*---1 **Product**
-
-**Comportamientos de borrado:**
-
-* Cascade: `Order → OrderItems`
-* Restrict: `Product` con `OrderItems`
-
 ---
 
 ## 🌟 Mejoras Destacadas
