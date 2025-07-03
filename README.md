@@ -161,11 +161,34 @@ Desarrollada con ASP.NET Core y EF Core. Cumple al 100% con los requisitos del T
 
 ### Flujo de creación de orden
 
-![Flujo de creación de orden](./DOCUMENTOS/imagenes/diagramaorden.png)
+![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
 
 ### Relaciones en Base de Datos
 
-![Diagrama de entidad relacion](./DOCUMENTOS/imagenes/db.png)
+![Diagrama de entidad relacion](./Documentos/imagenes/db.png)
+
+
+### Flujo de creación de orden
+
+![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
+
+### Diagrama de transición de estados de la orden 
+
+![Transición de estado de la orden](./Documentos/imagenes/estadosorden.png)
+
+En esta porcion de codigo se muestran las transiciones disponibles para el estado de la orden: 
+```bash
+var validTransitions = new Dictionary<string, List<string>>
+{
+    ["Pending"] = new List<string> { "Processing", "Cancelled" },
+    ["Processing"] = new List<string> { "Shipped", "Cancelled" },
+    ["Shipped"] = new List<string> { "Delivered" },
+    ["Delivered"] = new List<string>(), // No se puede cambiar más
+    ["Cancelled"] = new List<string>()  // No se puede cambiar más
+};
+```
+
+![Flujo de creación de orden](./Documentos/imagenes/diagramaorden.png)
 
 * **Order** 1---\* **OrderItem**
 * **OrderItem** \*---1 **Product**
